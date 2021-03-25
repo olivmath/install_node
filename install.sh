@@ -284,24 +284,6 @@ try md5_check
 next
 
 
-# Atualizando pacotes
-step "Updating your OS..."
-try $PKG update &> /dev/null
-try $PKG upgrade &> /dev/null
-try $PKG install wget &> /dev/null
-try $PKG install git &> /dev/null
-next
-
-# Instalando dependencia
-step "Installing OpenJDK8...."
-if [[ $SO != "ubuntu" ]]; then
-    JRE=java-1.8.0-openjdk
-else
-    JRE=openjdk-8-jre
-fi
-try $PKG install $JRE &> /dev/null
-next 
-
 # Criação do usuário lunesuser
 # Captura da Senha da Wallet"
 echo ""
