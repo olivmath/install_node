@@ -283,8 +283,7 @@ step "Checking MD5 sum...."
 try md5_check
 next
 
-
-# Criação do usuário lunesuser
+ação do usuário lunesuser
 # Captura da Senha da Wallet"
 echo ""
 echo ""
@@ -392,27 +391,29 @@ echo "   | | | . \ |\___ \   | | / /\ \ | |      / /\ \| |      / _ \| |  | |";
 echo "  _| |_| |\  |____) |  | |/ ____ \| |____ / ____ \ |____ / ___ \ |__| |";
 echo " |_____|_| \_|_____/   |_/_/    \_\______/_/    \_\_____/_/   \_\____/ ";
 echo "                                                    )_)                ";
-echo "                                                                       ";
-
-echo "   _____                 _       __    _         _ _ _ ";
-echo "  / ____|               | |     /_/   | |       | | | |";
-echo " | |     ___  _ __   ___| |_   _ _  __| | __ _  | | | |";
-echo " | |    / _ \| '_ \ / __| | | | | |/ _\ |/ _\ | | | | |";
-echo " | |___| (_) | | | | (__| | |_| | | (_| | (_| | |_|_|_|";
-echo "  \_____\___/|_| |_|\___|_|\__,_|_|\__,_|\__,_| (_|_|_)";
-echo "                                                       ";
-echo "                                                       ";
-echo -e "\e[97m"
-
-echo "Next steps: "
-echo " - on /tmp/wallet there is a file named SENHAS.TXT"
-echo "   !!!!! KEEP IT !!!!!"
-echo ""
-echo "Basic Commands:"
-echo " - Start node: systemctl start lunesnode"
 echo " - Stop node: systemctl stop lunesnode"
 echo " - Get node status: systemctl status lunesnode"
 echo ""
 echo "and welcom to Lunes Platform!"
 echo
+echo -e "\e[97m"
 
+
+#!/bin/bash
+#  
+#     _     _    _ _   _ ______  _____ 
+#    | |   | |  | | \ | |  ____|/ ____|
+#    | |   | |  | |  \| | |__  | (___  
+#    | |   | |  | | . ` |  __|  \___ \ 
+#    | |___| |__| | |\  | |____ ____) |
+#    |______\____/|_| \_|______|_____/ 
+#
+#
+# install_node.sh
+# Description: Lunes Node install script
+#
+# Usage: 
+#  $./install_node.sh <mainnet|testnet> <enter>
+#
+# Copyright (c) 2018 Lunes Platform.
+#
